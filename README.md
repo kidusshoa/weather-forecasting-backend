@@ -19,3 +19,7 @@ cd weather_backend
 # Create Django app
 
 python manage.py startapp api
+
+# Cors
+
+pip install django-cors-headers
