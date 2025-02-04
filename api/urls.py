@@ -1,10 +1,6 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import WeatherPredictionViewSet
-
-router = DefaultRouter()
-router.register(r'predictions', WeatherPredictionViewSet)
+from django.urls import path
+from .views import predict_weather  
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('predict/', predict_weather),  
 ]
